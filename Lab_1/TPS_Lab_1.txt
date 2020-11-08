@@ -1,0 +1,21 @@
+TPS Activity 1:
+1. Sargune Kalsi
+
+TPS Activity 2:
+1. You can open the terminal by ctrl+alt+t on a Linux computer.
+2. the "pwd" command will tell you your current directory.
+3. To navigate to Desktop directory, change directories by using the "cd" command and
+specifying where the dektop is located in your file explorer.
+4. THe "mkdir" command will make a new directory.
+
+TPS Activity 3:
+3. To compile main.c type "sudo gcc main.c" then type "./a.out"
+4. You can tell when the program compiles correctly because an object file will be created.
+5. the -c flag tells gcc to compile but not link the file.
+6. THe -g flag Generate debugging information. This information is stored in the object file and 
+copied from there to the final executable file by the linker, where it can be read by the debugger. 
+You must use the -g switch if you plan on using the debugger.
+7. To change the executable from main.c to cselab1 simple change main.c to cselab1.c
+8. You cannot compile without typing -c.
+9. ./a.out
+

@@ -1,0 +1,19 @@
+TPS Activity 1:
+4. a)To load an assembly file click open and find the .s file with your MIPS instructions.
+   b)To assemble the program, click the wrench and screwdriver icon.
+   c)To run the assembled program click the green go button.
+   d)No you cannot run a program without assembling it.
+   e)To run the assembled program line by line click the green go icon with the '1' subscripted next to it.
+   f) Click the green reset button to run the program again.
+
+TPS Activity 2:
+1. .data is the section where data is stored in memory (allocated in RAM); .word refers to an integer value; .text are the MIPS instructions the compiler will look at.
+2. Line 10 says if register t3 is equal to zero, jump to the 'finish' label.
+3. Line 15 jumps back up the the 'fib' label to recursively run the method as long as line 10 does not jump to finish.
+4. TO set a breakpoint go to the execute tab and click on the bkpt button next to the address where you want the program to stop.
+5. TO continue to execute your code after a breakpoint just click the go button again; to step through the code click the 
+   green go icon with the '1' subscripted next to it.
+6. Click on the execute tab and look at the registers tab. Here it will show the content of all 32 registers.
+7. n is stored in address 0x10010000; the 13th fibonacci number is 233
+8. The syscall instruction is usually used for printing; the li instruction, or load immediate, loads a number into a register that tells
+   syscall what to do. li $v0 1 means that syscall will print the contents of $v0, li $v0 10 would exit the program.

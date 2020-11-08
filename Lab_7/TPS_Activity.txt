@@ -1,0 +1,36 @@
+TPS Activity 1:
+
+1. A function is a sub-routine that manipulates data and returns a value; a 
+   method is similar to a function but is exclusive to Object Oriented 
+   langueages, because it is a part of a specific class of objects; a procedure
+   does NOT return a value.
+2. and 3. have no answers.
+4. Line 12 uses j SUM to jump to the line with label SUM.
+5. We can use j if we create a label for the line after j SUM is called (line 13).
+6. The return address is supposed to be saved to the line after the function is called.
+   The return address is saved to $ra. The value of the address being saved here
+   is ZERO, which makes no sense.
+7. "Error in : invalid program counter value: 0x00000000"
+8. The $ra should store address 0x00400020
+9. The return address is correct; it should be the next line of written 
+   code as opposed to the next line in general.
+10. The new return address is 4194344, or 0x00400028 in hex. The output is 15
+11. We should use jal. The compiler automattically saves the next line's address to
+    $ra 
+12. OK 
+
+
+TPS Activity 2:
+1. The output is 38.
+3. After MAIN calls SUM, SUM knows to return to the line after because of jal.
+   After SUM called SUB, the address returning to MAIN is overridden by jal SUB.
+   $ra now equals the line after SUB is called, not SUM. We can use the stack pointer
+   as a guide to help us know where to return to and when.
+4. Instead of saving arguments into temporary registers, we can save these values
+   onto the stack for later use using load and store word.
+5. The original value of $s0 which is x from main is lost because it is 
+   overwritten without first being stored somewhere else. This is a problem 
+   because the value of x is intended to be used in other places of the
+   program but it can no longer be used because it was not saved anywhere. 
+   One possible way to fix this could be to push the value of $s0 onto the 
+   stack. 

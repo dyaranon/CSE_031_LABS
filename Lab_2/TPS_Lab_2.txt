@@ -1,0 +1,16 @@
+TPS Activity 2:
+1. To compile punishment.c so that you can debug it using GDB, say gcc -g punishment.c -o "executable name";
+the executable can be any name.
+2.One punishment is compiled, you load it in GDB by typing gdb "exectubale name".
+3. Once punish is loaded, just press r for run.
+4. Breakpoints can be set with br"#", where # is the line that you want the code to stop at just before running it.
+5. To run the program line by line, press n for next.
+6. To see the value of a variable you can print it with p main.c::variableName;
+7. Press c to continue the code until main is finished.
+8. To exit gdb press q for quit.
+
+TPS Activity 3:
+1. 4 varibales were declared in line 1, px and py were pointers.
+2. If you run the program, x, y, and arr[0] will print garbage data because their values have not been initalized.
+3. You can have the user input values or initalize them with zero.
+4. printf("%d", &x);

@@ -1,0 +1,12 @@
+TPS Activity 1:
+
+5. We do not need to declare n in .data or use la or lw
+
+TPS Activity 2:
+1. The output is 29
+4. $a0 will be used because register convention says to use it for aguments to functions.
+5. It is expected to be stored in $v0 but it can be moved to $a0 because $v0 will be used for syscall.
+7. 3 integer values are saved onto the stack; the first thing saved on a stack frame is the return address.
+10. Saving  $a0 in the stack helps us compare it to the original value input
+12. If recursion is called right away,  the new values from recursion will get written into the same register and the previous values will disappear.
+15. The value that has to be retrieved is the return address, which is the address after the first recursion function is called

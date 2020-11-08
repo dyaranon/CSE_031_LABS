@@ -1,0 +1,18 @@
+TPS Activity 1:
+
+1. The three pools of memoery are the stack (for local variables), the heap (for dynamically
+allocated variables/data) and static data(global variable storage, permanent for the 
+entire run of the program)
+2. a. 3 variables have been declared in mem.c
+   b. 2 are pointers; ptr points to an address in the memory containing an int, and handle points to an address
+      that stores another pointer.
+   c. These 3 variables are stored in the stack.
+   d. In line 12 ptr will point to a variable in the heap.
+
+
+Assignment 1:
+1. a. We need to pass the size of the array to the function to make sure we aren't manipulating data
+      not a part of the array (i.e. garbage).
+   b. The orgiinal array is not changed because we copy the data into a new array and sort THAT one.
+   c. the main() function returns both he original array and the new sorted array, so it's good we have
+      both versions.
